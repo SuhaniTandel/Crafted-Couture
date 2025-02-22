@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Outfit | Crafted Couture</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
+    <link rel="stylesheet" href="./css/editor.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>✨ Crafted Couture - Customize Your <span id="selectedCategory">Outfit</span> ✨</h1>
+    </header>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <h2>👕 Product Selection</h2>
+            <select id="productSelect">
+                <option value="dress">Dress</option>
+                <option value="hoodie">Hoodie</option>
+                <option value="jacket">Jacket</option>
+                <option value="top">Top</option>
+                <option value="skirt">Skirt</option>
+            </select>
+
+            <h2>🎨 Print Area</h2>
+            <div class="button-group">
+                <button id="frontPrint">Front</button>
+                <button id="backPrint">Back</button>
+                <button id="sleevePrint">Sleeves</button>
+                <button id="neckPrint">Neck</button>
+                <button id="waistPrint">Waist</button>
+            </div>
+
+            <h2>🖼️ Add Elements</h2>
+            <input type="file" id="uploadImage">
+            <button id="addText">➕ Add Text</button>
+            <input type="color" id="colorPicker">
+
+            <h2>✍️ Text Styling</h2>
+            <div class="button-group">
+                <button id="boldText"><b>B</b></button>
+                <button id="italicText"><i>I</i></button>
+            </div>
+
+            <h2>🖌️ Drawing Tools</h2>
+            <div class="button-group">
+                <button id="freeDraw">✏️ Draw</button>
+                <button id="eraser">🧽 Erase</button>
+            </div>
+
+            <h2>🛠️ Editing Tools</h2>
+            <div class="button-group">
+                <button id="undo">↩️ Undo</button>
+                <button id="redo">↪️ Redo</button>
+                <button id="deleteObject">🗑️ Delete</button>
+            </div>
+        </div>
+
+        <!-- Canvas Area -->
+        <div class="canvas-container">
+            <h2>🖥️ Design Preview</h2>
+            <canvas id="canvas" width="700" height="900"></canvas>
+        </div>
+    </div>
+
+    <button id="saveDesign" class="save-button">💾 Save Design</button>
+
+    <script src="js/editor.js"></script>
+</body>
+</html>

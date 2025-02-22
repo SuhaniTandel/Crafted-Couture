@@ -1,0 +1,146 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #eab4b3, #ffffff);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #e57876;
+    color: #2a2626;
+    padding: 50px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    flex: 1;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav a {
+    color: #212020;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #050505;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 60px;
+    color: #313131;
+    margin-bottom: 10px;
+
+}
+
+p {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #666;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+button {
+    background: #e86765;
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #e57876;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    button {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
